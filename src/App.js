@@ -5,6 +5,10 @@ import Navbar from './Components/Navbar/Navbar.js';
 import LandingPage from './Components/Landing_Page/LandingPage.js';
 import Login from './Components/Login/Login.js';
 import SignUp from './Components/Sign_Up/Sign_Up.js';
+import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch.js';
+import DoctorCard from './Components/DoctorCard/DoctorCard.js';
+import AppointmentForm from './Components/AppointmentForm/AppointmentForm.js';
+import BookingConsultation from './Components/BookingConsultation.js';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation.js';
 
 function App() {
@@ -17,6 +21,10 @@ function App() {
                 <Route path="/" element={<LandingPage />}/>
                 <Route path="/Login" element={<Login />}/>
                 <Route path="/SignUp" element={<SignUp />}/>
+                <Route path="/FindDoctor" element={<FindDoctorSearch />}/>
+                <Route path="/DoctorCard" element={<DoctorCard />}/>
+                <Route path="/AppointmentForm" element={<AppointmentForm />}/>
+                <Route path="/BookingConsultation" element={<BookingConsultation />}/>
                 <Route path="/instant-consultation" element={<InstantConsultation />} />
               </Routes>
             
