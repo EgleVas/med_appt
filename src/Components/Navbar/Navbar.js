@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import ProfileCard from "../ProfileCard/ProfileCard";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -14,8 +15,7 @@ const Navbar = () => {
         sessionStorage.removeItem("auth-token");
         sessionStorage.removeItem("name");
         sessionStorage.removeItem("email");
-        sessionStorage.removeItem("phone");
-        // remove email phone
+        sessionStorage.removeItem("phone");        
         localStorage.removeItem("doctorData");
         setIsLoggedIn(false);
         // setUsername("");
@@ -67,6 +67,7 @@ const Navbar = () => {
             </li>
             {isLoggedIn?(
                 <>
+                    <div className="profile-dropdown">{`Welcome, ${username.split("@")[0]}`}<ProfileCard /></div>
                     <li className="link">
                         <button className="btn2" onClick={handleLogout}>Logout</button>
                     </li>            

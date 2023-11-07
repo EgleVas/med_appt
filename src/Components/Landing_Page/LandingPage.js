@@ -18,7 +18,7 @@ const LandingPage = () => {
                         <div className="blue1 blob"></div>
                     </div>
                     <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis quibusdam non cum rem voluptatem!</h4>
-                    <Link to="#services">
+                    <Link to="/search/doctors">
                         <button className="button">Get Started</button>
                     </Link>
                 </div>
