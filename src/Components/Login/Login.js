@@ -10,7 +10,7 @@ const Login = () => {
 
     useEffect(() => {
         if (sessionStorage.getItem("auth-token")) {
-            navigate("/")
+            navigate('/')
         }
     }, []);
 

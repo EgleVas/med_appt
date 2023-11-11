@@ -21,7 +21,7 @@ function App() {
     <div className="App">
         <BrowserRouter>
             <Navbar/>
-            <Notification/>
+            <Notification>
                 <Routes>
                     <Route path="/" element={<LandingPage />}/>
                     <Route path="/Login" element={<Login />}/>
@@ -35,7 +35,7 @@ function App() {
                     <Route path="/reports" element={<Reports />}/>                 
                     <Route path="/instant-consultation" element={<InstantConsultation />} />
                 </Routes>
-            
+            </Notification>
         </BrowserRouter>
        
     </div>
