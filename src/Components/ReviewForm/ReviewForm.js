@@ -50,7 +50,7 @@ export default function ReviewForm() {
             <td>Dermatology</td>
             <td>
               {/* {<Feedback onHandleReview={handleReview} />} */}
-              <Button variant="primary" disabled size ='sm'>Review Submitted</Button>
+              <Button style={{backgroundColor: "green"}} variant="primary" disabled size ='sm'>Review Submitted</Button>
               </td>
             <td>Great consultation</td>
           </tr>
