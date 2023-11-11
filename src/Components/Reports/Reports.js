@@ -58,10 +58,10 @@ const Reports = () => {
             <td>Dr. Paula Boe</td>
             <td>Dermatology</td>
             <td>
-              <Button variant="primary" disabled size='sm'>Report Unavailable</Button>
+              <Button style={{backgroundColor: 'red'}} variant="primary" disabled size='sm'>Report Unavailable</Button>
             </td>
             <td>
-                <Button variant="primary" disabled size='sm'>Download Unavailable</Button>
+                <Button style={{backgroundColor: 'red'}} variant="primary" disabled size='sm'>Download Unavailable</Button>
             </td>
           </tr>
         </tbody>
