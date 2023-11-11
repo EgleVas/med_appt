@@ -26,7 +26,6 @@ const SignUp = () => {
                 email: email,
                 password: password,
                 phone: phone,
-
             }),
         });
 
@@ -34,12 +33,10 @@ const SignUp = () => {
 
         if (json.authtoken) {
             sessionStorage.setItem("auth-token", json.authtoken);
-            sessionStorage.setItem("name", name);
-            // phone and email
+            sessionStorage.setItem("name", name);            
             sessionStorage.setItem("phone", phone);
-            sessionStorage.setItem("email", email);
-            // Redirect to home page
-            navigate("/");   //on directing to home page you need to give logic to change login and signup buttons with name of the user and logout button where you have implemented Navbar functionality
+            sessionStorage.setItem("email", email);            
+            navigate("/");
             window.location.reload();
         } else {
             if (json.errors) {
@@ -72,7 +69,6 @@ const SignUp = () => {
                                 name="name" 
                                 id="name" 
                                 required
-                                minLength={4}
                                 className="form-control" 
                                 placeholder="Enter your name" 
                                 aria-describedby="helpId" 

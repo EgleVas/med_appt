@@ -27,6 +27,7 @@ const Login = () => {
                 password: password,
             }),
         });
+        
         const json = await res.json();
         if (json.authtoken) {
             sessionStorage.setItem('auth-token', json.authtoken);    
@@ -67,7 +68,9 @@ const Login = () => {
                                 required
                                 className="form-control" 
                                 placeholder="Enter your email" 
-                                aria-describedby="helpId" />
+                                aria-describedby="helpId" 
+                            />
+                            {alert && <div className="err" style={{ color: 'red' }}>{alert}</div>}
                         </div>
                         <div className="form-group">
                             <label htmlFor="password">Password</label>
@@ -78,10 +81,12 @@ const Login = () => {
                                 name="password"
                                 id="password"
                                 required
+                                minLength={8}
                                 className="form-control"
                                 placeholder="Enter your password"
                                 aria-describedby="helpId"
                             />
+                            {alert && <div className="err" style={{ color: 'red' }}>{alert}</div>}
                         </div>
                         <div className="btn-group">
                             <button type="submit" className="btn btn-primary mb-2 mr-1 waves-effect waves-light">Login</button> 
