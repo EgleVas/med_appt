@@ -28,12 +28,13 @@ const Reports = () => {
   };
 
   return (
-    <div style={{margin: "auto", maxWidth: "800px", marginTop: "10%"}}>
+    <div style={{margin: "auto", maxWidth: "1000px", marginTop: "10%"}}>
       <h2 style={{marginBottom: "10px"}}>Reports</h2>
-      <Table responsive>
+      <div className='.form-container'>
+      <table style={{ width: '100%'}}>
         <thead>
           <tr>
-            <th>Serial Number</th>
+            <th>No.</th>
             <th>Doctor Name</th>
             <th>Doctor Speciality</th>
             <th>View Report</th>
@@ -64,7 +65,8 @@ const Reports = () => {
             </td>
           </tr>
         </tbody>
-      </Table>
+      </table>
+      </div>
     </div>
   )
 }

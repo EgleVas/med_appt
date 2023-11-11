@@ -24,12 +24,12 @@ const FindDoctorSearch = () => {
             <center>
                 <h1>Find a doctor and Consult instantly</h1>
                 <div>               
-                    <i style={{ color:'#000000',fontSize:'20rem' }} className="fa fa-user-md"></i>
+                    <img className="mainimg" src='../../../find_doctor.png' alt="Find Doctor"/>
                 </div>                
                 <div className="home-search-container" style={{ display:'flex', justifyContent:'center', alignItems:'center' }}>
                     <div className="doctor-search-box">
                         <input type="text" className="search-doctor-input-box" placeholder="Search doctors, clinics, hospitals, etc." onFocus={() => setDoctorResultHidden(false)} onBlur={() => setDoctorResultHidden(true)} value={searchDoctor} onChange={(e) => setSearchDoctor(e.target.value)} />
-                        <div className="findiconimg"><img className='findIcon' src={process.env.PUBLIC_URL + '/images/search.svg'} alt=""/></div>
+                        <div className="findiconimg"><img className='findIcon' src={process.env.PUBLIC_URL + '../../../search.svg'} alt=""/></div>
                         <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                             {
                                 specialities.map(speciality => <div className="search-doctor-result-item" key={speciality} onMouseDown={() => handleDoctorSelect(speciality)}>

@@ -67,9 +67,6 @@
 
 }
 
-
-
-
 .doctor-search-box {
     display: flex;
     align-items: center;
@@ -110,8 +107,13 @@
     height: 40px;
     border: 1px solid rgb(59, 58, 58);
     z-index: -99;
-
 }
+
+.findIcon {
+    width: 70%;
+    margin: 20%;
+}
+
 .search-doctor-input-results {
     position: absolute;
     top: 55%;

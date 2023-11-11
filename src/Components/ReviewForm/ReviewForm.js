@@ -12,12 +12,13 @@ export default function ReviewForm() {
   console.log(reviews)
 
   return (
-    <div style={{margin: "auto", maxWidth: "800px", marginTop: "10%"}}>
+    <div style={{margin: "auto", maxWidth: "1000px", marginTop: "10%"}}>
       <h2 style={{marginBottom: "10px"}}>Reviews</h2>
-      <Table responsive>
+      <div className='.form-container'>
+      <table style={{ width: '100%'}}>
         <thead>
           <tr>
-            <th>Serial Number</th>
+            <th>No.</th>
             <th>Doctor Name</th>
             <th>Doctor Speciality</th>
             <th>Provide Feedback</th>
@@ -54,7 +55,8 @@ export default function ReviewForm() {
             <td>Great consultation</td>
           </tr>
         </tbody>
-      </Table>
+      </table>
+      </div>
     </div>
   )
 }
