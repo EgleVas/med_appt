@@ -55,10 +55,10 @@ const SignUp = () => {
     return (
         <div className="container" style={{marginTop:'5%'}}>
             <div className="signup-grid">
-                <div class="signup-text">
+                <div className="signup-text">
                     <h1>Sign Up</h1>
                 </div>
-                <div class="signup-text1" style={{textAlign: 'left'}}>
+                <div className="signup-text1" style={{textAlign: 'left'}}>
                     Already a member? <span><Link to="/Login" style={{color: '#2190FF'}}> Login</Link></span>
                 </div>
                 <div className="signup-form">
@@ -126,8 +126,8 @@ const SignUp = () => {
                         </div>
 
                         <div className="btn-group">
-                            <button type="submit" class="btn btn-primary mb-2 mr-1 waves-effect waves-light">Submit</button>
-                            <button type="reset" class="btn btn-danger mb-2 waves-effect waves-light">Reset</button>
+                            <button type="submit" className="btn btn-primary mb-2 mr-1 waves-effect waves-light">Submit</button>
+                            <button type="reset" className="btn btn-danger mb-2 waves-effect waves-light">Reset</button>
                         </div>
 
                     </form>

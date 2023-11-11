@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import ProfileCard from "../ProfileCard/ProfileCard";
+import ProfileCard from "../Profile/ProfileCard";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [userDetails, setUserDetails] = useState({});
     const [username, setUsername] = useState("");
     const[email,setEmail]=useState("");
     const [showDropdown, setShowDropdown] = useState(false);
